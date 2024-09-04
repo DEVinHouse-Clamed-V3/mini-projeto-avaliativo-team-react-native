@@ -1,0 +1,109 @@
+:root {
+    --transition: all 300ms ease-in-out;
+    --dark-color: #02040F;
+    --light-color: #fff;
+    --light-gray-1: #f1f1f1;
+    --light-gray-2: #f5f5f5;
+    --light-gray-3: #f7f7f7;
+    --middle-gray: #e5e5e5;
+    --timberwolf: #E5DADA;
+    --middle-gray-2: #d5d5d5;
+    --dark-gray: #666;
+    --primary-yellow: #E59500;
+    --primary-green: #4DB6AC;
+    --secundary-green: #26A69A;
+    --tercery-green: #4CA1AF;
+    --primary-blue: #1E3A8A;
+    --secundary-blue: #58738a;
+    --prussian-blue: #002642;
+    --error-color: #ff0000;
+    --font-primary: 'Roboto', sans-serif;
+}
+
+.total-quantity {
+    color: var(--tercery-green);
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.listagem {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.listagem-compras {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.listagem .produto {
+    background-color: var(--light-color);
+    border: 1px solid var(--middle-gray);
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.listagem .produto img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    box-shadow: none;
+}
+
+.listagem .produto .product-content {
+    padding: 1rem;
+    max-width: 500px;
+}
+
+.product-content .product-title {
+    font-size: 1.8rem;
+    text-overflow: ellipsis;
+    color: var(--prussian-blue)
+}
+
+.product-content .product-quantity {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: var(--dark-gray);
+}
+
+.product-content .product-price,
+.total .product-price {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    display: block;
+}
+
+.total {
+    background-color: var(--light-color);
+    border: 1px solid var(--light-gray-3);
+    padding: 1rem;
+    transition: var(--transition);
+    height: 220px;
+    border-radius: 0.5rem;
+}
+
+.total .product-price {
+    font-size: 2.4rem;
+    padding-top: 1rem;
+    font-weight: bold;
+}
+
+@media (max-width: 1142px) {
+    .total {
+       margin-top: 5rem;
+    }
+}
