@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de compras</title>
+
+     <!-- Icons-->
+     <link rel="stylesheet" 
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+     crossorigin="anonymous" 
+     referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="css/carrinho.css">
+    <link rel="stylesheet" href="css/no-data.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="menu-hamburger">
+                    <button>
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div>
+                        <img src="image/logotipo.png" alt="foto do logotipo farmanews">
+                    </div>
+                </div>
+        
+                <div class="search">
+                    <input type="text" id="search" placeholder="O que está buscando hoje?"/>
+                    <button>
+                        <i class="fa-solid fa-search"></i>
+                    </button>
+                </div>
+        
+                <div class="telephone">
+                    <button>
+                        <i class="fa-solid fa-tty"></i>
+                    </button>
+        
+                    <div class="telephone-content">
+                        <span class="telesales">
+                            Televendas
+                        </span>
+                        
+                        <span class="number">
+                            21 4002-8922
+                        </span>
+                    </div>
+                </div>
+                    
+                <div class="login">
+                    <button>
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+        
+                    <div class="login-content">
+                        <span class="login-span">
+                            Faca o <a href="login.html">Login</a>
+                            ou <a href="cadastro.html">Cadastre-se</a>
+                        </span>
+        
+                        <span class="myorders">
+                            <a href="#">Meus pedidos</a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="shopping-cart">
+                    <a href="favorito.html">
+                        <i class="fa-regular fa-heart"></i>
+                    </a>
+                </div>
+        
+                <div class="shopping-cart">
+                    <a href="carrinho.html">
+                        <i class="fa-solid fa-shopping-cart"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-7">
+        <section class="container">
+            <div class="title">
+                <h1>Carrinho de Compras</h1>
+            </div>
+
+            <div class="total-quantity" id="total-quantity">
+                <span>1 medicamento no carrinho</span>
+            </div>
+
+            <div class="listagem">
+                <div class="listagem-compras" id="listagem-compras">
+                    <!-- <div class="produto">
+                        <div class="imagem">
+                            <img 
+                            src="https://drogariacatarinense.vteximg.com.br/arquivos/ids/171561-500-500/723201_.jpg?v=637515128134970000" 
+                            alt="imagem do medicamento">
+                        </div>
+
+                        <div class="product-content">
+                            <div class="descricao">
+                                <h2 class="product-title">Loratadina Cimed Com 12 Comprimidos 10mg Generico </h2>
+                                <spa class="product-quantity">Quantidade: 1</spa>
+                                <span class="product-price">R$ 79.00</span>
+                            </div>
+                            <div class="acoes">
+                                <button class="btn">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+
+                <aside class="total">
+                    <div id="total-compra">
+                        <h2>total da compra</h2>
+                        <span class="product-price">R$ 79.00</span>
+                    </div>
+                    <div id="finalizar-compra">
+                        <button class="btn" onclick="finalizarCompra()">finalizar compra</button>
+                    </div>
+                    <div>
+                        <button class="btn" onclick="voltarListagem()">
+                            <i class="fa-solid fa-plus"></i>
+                            Carrinho
+                        </button>
+                    </div>
+                </aside>
+            </div>
+        </section>            
+    </main>
+
+    <script src="js/carrinho.js"></script>
+    
+</body>
+</html>

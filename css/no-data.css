@@ -1,0 +1,51 @@
+
+.listagem-compras {
+    width: auto;
+}
+
+.listagem-favorito .no-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.listagem-compras .no-data img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+    box-shadow: none;
+}
+
+.listagem-favorito .no-data img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    box-shadow: none;
+}
+
+
+.listagem-compras .no-data .no-data-h2,
+.listagem-favorito .no-data .no-data-h2 {
+    font-size: 3.5rem;
+    margin-top: 1rem;
+    color: var(--prussian-blue);
+    text-align: center;
+}
+
+.listagem-compras .no-data .no-data-h2 {
+    text-align: left;
+}
+
+.listagem-compras .no-data .no-data-p,
+.listagem-favorito .no-data-p {
+    font-size: 1.8rem;
+    color: var(--prussian-blue);
+    text-align: center;
+}
+
+.listagem-compras .no-data .no-data-p {
+    text-align: left;
+}
