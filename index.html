@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- Icons-->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+    <header class="">
+        <div class="container">
+            <div class="header-content">
+                <div class="menu-hamburger">
+                    <button>
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div>
+                        <img src="image/logotipo.png" alt="foto do logotipo farmanews">
+                    </div>
+                </div>
+        
+                <div class="search">
+                    <input type="text" id="search" placeholder="O que está buscando hoje?"/>
+                    <button>
+                        <i class="fa-solid fa-search"></i>
+                    </button>
+                </div>
+        
+                <div class="telephone">
+                    <button>
+                        <i class="fa-solid fa-tty"></i>
+                    </button>
+        
+                    <div class="telephone-content">
+                        <span class="telesales">
+                            Televendas
+                        </span>
+                        
+                        <span class="number">
+                            21 4002-8922
+                        </span>
+                    </div>
+                </div>
+                    
+                <div class="login">
+                    <button>
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+        
+                    <div class="login-content">
+                        <span class="login-span">
+                            Faca o <a href="login.html">Login</a>
+                            ou <a href="cadastro.html">Cadastre-se</a>
+                        </span>
+        
+                        <span class="myorders">
+                            <a href="#">Meus pedidos</a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="shopping-cart">
+                    <a href="favorito.html">
+                        <i class="fa-regular fa-heart"></i>
+                    </a>
+                </div>
+        
+                <div class="shopping-cart">
+                    <a href="carrinho.html">
+                        <i class="fa-solid fa-shopping-cart"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-7">
+        <section class="container">
+            <div class="title">
+                <h1>Formulário de Cadastro de Medicamentos</h1>
+            </div>
+            <div>
+                <form action="" id="form">
+                    <div class="form-group">
+                        <label for="nome">Nome do Medicamento:</label>
+                        <input class="input" type="text" name="nome" id="nome" placeholder="medicamento....">
+                        <span class="error" id="errorMedicamento"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="laboratorio">Nome do Laboratório:</label>
+                        <input class="input" type="text" name="laboratorio" id="laboratorio" placeholder="laborátorio....">
+                        <span class="error" id="errorLaboratorio"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="label" for="categoria">Categoria:</label>
+                        <select class="input" name="categoria" id="categoria">
+                            <option value="0">Selecione</option>
+                            <option value="Analgesicos">Analgésicos</option>
+                            <option value="Antibioticos">Antibióticos</option>
+                            <option value="Anti-inflamatorios">Anti-inflamatórios</option>
+                            <option value="Antitermicos">Antitérmicos</option>
+                            <option value="Antivirais">Antivirais</option>
+                            <option value="Generico">Genêrico</option>
+                            <option value="Outros">Outros</option>
+                        </select>
+                        <span class="error" id="errorCategoria"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preco">Preço:</label>
+                        <input class="input" type="number" name="preco" id="preco" min="0.00" step="0.01" placeholder="00.00">
+                        <span class="error" id="errorPreco"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="desconto">Desconto:</label>
+                        <input class="input" type="number" name="desconto" id="desconto" min="0" step="0" placeholder="0">
+                        <span class="error" id="errorDesconto"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="urlImage">URL da Imagem:</label>
+                        <input class="input" type="url" name="urlImage" id="urlImage" placeholder="http://www.exemplo.com.br">
+                        <span class="error" id="errorUrl"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <button class="btn" type="submit">Cadastrar</button>
+                        <button class="btn ml-2" onclick="redirecionarListagem()">
+                            Listagem
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/cadastro.js"></script>
+</body>
+</html>
