@@ -67,7 +67,7 @@ function gerarListagem() {
 
                 <div class="card-image">
                     <img 
-                    src="https://drogariacatarinense.vteximg.com.br/arquivos/ids/171561-500-500/723201_.jpg?v=637515128134970000" 
+                    src="${medicamento.urlImage}"
                     alt="Imagem do medicamento">
                 </div>
 

@@ -35,7 +35,7 @@ function gerarListagemCarrinho() {
         listagemHTML += `
             <div class="produto">
                 <div class="imagem">
-                    <img src="https://drogariacatarinense.vteximg.com.br/arquivos/ids/171561-500-500/723201_.jpg?v=637515128134970000" alt="imagem do medicamento">
+                    <img src="${medicamento.urlImage}" alt="imagem do medicamento">
                 </div>
 
                 <div class="product-content">
