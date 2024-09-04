@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem de Medicamentos</title>
+
+    <!-- Icons-->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="css/listagem.css">
+</head>
+
+<body>
+    <header class="">
+        <div class="container">
+            <div class="header-content">
+                <div class="menu-hamburger">
+                    <button>
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div>
+                        <img src="image/logotipo.png" alt="foto do logotipo farmanews">
+                    </div>
+                </div>
+        
+                <div class="search">
+                    <input type="text" id="search" placeholder="O que está buscando hoje?"/>
+                    <button>
+                        <i class="fa-solid fa-search"></i>
+                    </button>
+                </div>
+        
+                <div class="telephone">
+                    <button>
+                        <i class="fa-solid fa-tty"></i>
+                    </button>
+        
+                    <div class="telephone-content">
+                        <span class="telesales">
+                            Televendas
+                        </span>
+                        
+                        <span class="number">
+                            21 4002-8922
+                        </span>
+                    </div>
+                </div>
+                    
+                <div class="login">
+                    <button>
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+        
+                    <div class="login-content">
+                        <span class="login-span">
+                            Faca o <a href="login.html">Login</a>
+                            ou <a href="cadastro.html">Cadastre-se</a>
+                        </span>
+        
+                        <span class="myorders">
+                            <a href="#">Meus pedidos</a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="shopping-cart">
+                    <a href="favorito.html">
+                        <i class="fa-regular fa-heart"></i>
+                    </a>
+                </div>
+        
+                <div class="shopping-cart">
+                    <a href="carrinho.html">
+                        <i class="fa-solid fa-shopping-cart"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-7">
+        <section class="container">
+            <div class="title">
+                <h1>Listagem de Medicamentos</h1>
+            </div>
+
+            <div class="filtros">
+                <div class="form-group">
+                    <label class="label" for="categoria">Filtro por categoria:</label>
+                    <div class="filter">
+                        <select class="input" name="categoria" id="categoria">
+                            <option value="0">Selecione</option>
+                            <option value="Analgesicos">Analgésicos</option>
+                            <option value="Antibioticos">Antibióticos</option>
+                            <option value="Anti-inflamatorios">Anti-inflamatórios</option>
+                            <option value="Antitermicos">Antitérmicos</option>
+                            <option value="Antivirais">Antivirais</option>
+                            <option value="Generico">Genêrico</option>
+                            <option value="Outros">Outros</option>
+                        </select>
+                        <button class="btn">Filtrar</button>
+                    </div>
+                
+                    <button class="btn" onclick="voltarCadastrar()">
+                        <i class="fa-solid fa-plus"></i>
+                        Medicamentos
+                    </button>
+                </div>
+            </div>
+            <div id="listagem" class="listagem">
+                <!-- <div class="card">
+                    <div class="favorito">
+                        <div class="desconto">
+                            <span>10%</span>
+                        </div>
+
+                        <button class="icon" onclick="clicarFavorito(id)">
+                            <i class="fa-regular fa-heart" id="heart"></i>
+                        </button>
+                    </div>
+
+                    <div class="card-image">
+                        <img 
+                        src="https://drogariacatarinense.vteximg.com.br/arquivos/ids/171561-500-500/723201_.jpg?v=637515128134970000" 
+                        alt="Imagem do medicamento">
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="card-title">
+                            Simeticona Biosintética 125mg Com 10 Cápsulas
+                        </h2>
+                        <h3 class="categoria">
+                            Analgésicos
+                        </h3>
+                        <p class="card-laboratory">
+                            Roche
+                        </p>
+                        <p class="card-price">
+                            R$ 5,40
+                        </p>
+                        <button class="btn">
+                            adicionar
+                            <i class="fa-solid fa-shopping-cart"></i>
+                        </button>
+                    </div>>
+                </div> -->
+            </div>
+        </section>
+    </main>
+
+    <script src="js/listagem.js"></script>
+</body>
+</html>
